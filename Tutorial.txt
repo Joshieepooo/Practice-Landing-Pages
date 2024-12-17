@@ -1,0 +1,39 @@
+Shortcuts + Order:
+    Font = [font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family]
+    Grid = [grid-template-rows] [grid-template-columns] [grid-template-areas] [grid-auto-rows] [grid-auto-columns] [grid-gap]
+
+Order:
+    Layout = [display] [justify-content] [align-items]
+    Box Model = [height] [width] [padding] [margin] [border]
+    Visual Appearance = [background-color] [color] [border]
+    Positioning = [position] [top] [left] [z-index]
+
+Order By Class:
+    Class {Font Grid Layout Box-Model Visual-Appearance Border Positioning z-index opacity visibility cursor overflow transition animation filter pointer-events background}
+
+Media Queries Anatomy:
+    @At-Rule - Media - Media Feature - Operator - Media Feature
+    @media screen and (min-width: 320px) and (max-width: 768px) {}
+
+    New Media Query Range Syntax:
+        Current Way ~
+        @media (min-width: 768px) and (max-width: 1200px) {}
+
+        New Way ~
+        @media (768px <= width <= 1200px) {}
+
+    Media Queries Examples:
+        Extra Large Screen, TV, etc.
+        @media (1201px <= width <= 1440px) {}
+
+        Desktop, Large Screen:
+        @media (1025px <= width <= 1200px) {}
+
+        Tablet (Landscape), Laptop, Desktop:
+        @media (992px <= width <= 1024px) {}
+
+        Tablet (Portrait):
+        @media (769px <= width <= 991px) {}
+
+        Tablet, Ipad:
+        @media (481px <= width <= 768px) {}
